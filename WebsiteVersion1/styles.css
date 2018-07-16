@@ -1,0 +1,40 @@
+.panel > .panel-success {
+	color: #41b2f4;
+}
+.panel > .panel-heading {
+	background: #bdda57;
+}
+.jumbotron {
+	background: #bdda57;
+}
+.panel > .panel-footer {
+	background: #bdda57;
+}
+.jumbotron > .container > h1 {
+	font-family: "Verdana", geneva, sans-serif;
+    font-size: 75px;
+}
+p {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+    background-color: #bdda57; /* Add a green color to the "active/current" link */
+    color: white;
+}
