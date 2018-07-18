@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Sea Dogs </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+	/* Remove the navbar's default rounded borders */ 
+	.navbar {
+		border-radius: 0;
+	}
+
+	/* Remove the jumbotron's default bottom margin */ 
+	.jumbotron {
+		background-color: green;
+		color: white;
+		margin-bottom: 0;
+	}
+
+	/* Add a gray background color and some padding to the footer */
+	footer {
+		background-color: #f2f2f2;
+		padding: 25px;
+	}
+
+	/* Scale images down */
+	.cartPicture{
+		width: 70%;
+		height: 70%;
+	}
+
+	/* Add space between items and panel */
+	.row{
+		padding: 10px;
+	}
+</style>
+</head>
+<body>
+
+	<!-- Banner -->
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1>Sea Dogs</h1>      
+			<p>We sell food</p>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li><a href="#"><span class="glyphicon glyphicon-home"></a></li>
+				<li><a href="#"> Specials </a></li>
+				<li><a href="#"> Single Items </a></li>
+				<li><a href="#"> Delivery Options </a></li>
+				<li><a href="#"> About Us </a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span> Login </a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Register </a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Content -->
+	<div class="container">
+		<!-- Items are in a panel -->
+		<div class="panel panel-default">
+			<!-- Header -->
+			<div class="panel-heading text-center"> <h4> Shopping Cart </h4> </div>
+
+			<!-- List of items in 3x3 grid -->
+			<ul class="list-group">
+				<div class="row">
+					<div class="col-md-4">
+						<img class="cartPicture center-block" src="combo/01.jpg">
+						<h5 class="text-center"> Name: ... | Quantity: ... | Price: ... | Delivery Date: ... </h5>
+					</div>
+					<div class="col-md-4">
+						<img class="cartPicture center-block" src="combo/02.jpg">
+						<h5 class="text-center"> Name: ... | Quantity: ... | Price: ... | Delivery Date: ... </h5>
+					</div>
+					<div class="col-md-4">
+						<img class="cartPicture center-block" src="combo/03.jpg">
+						<h5 class="text-center"> Name: ... | Quantity: ... | Price: ... | Delivery Date: ... </h5>
+					</div>
+					<div class="col-md-4">
+						<img class="cartPicture center-block" src="single/01.jpg">
+						<h5 class="text-center"> Name: ... | Quantity: ... | Price: ... | Delivery Date: ... </h5>
+					</div>
+				</div>
+			</ul>
+
+			<!-- Checkout button -->
+			<div class="panel-footer">
+				<button class="btn btn-primary"> Checkout </button>
+				<button class="btn btn-danger"> Edit </button>
+			</div>
+		</div><br>
+	</div>
+
+	<!-- Footer -->
+	<footer class="container-fluid text-center">
+		<p>Contact Us</p>
+		<p>Phone: (123) 456 7890 | Mail: 1234 Fake St Phoenix, AZ | Email: user@domain.com</p>
+	</footer>
+
+</body>
+</html>
