@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+	/* Remove the navbar's default rounded borders */ 
+	.navbar {
+		border-radius: 0;
+	}
+
+	/* Remove the jumbotron's default bottom margin */ 
+	.jumbotron {
+		background-color: green;
+		color: white;
+		margin-bottom: 0;
+	}
+
+	/* Add a gray background color and some padding to the footer */
+	footer {
+		background-color: #f2f2f2;
+		padding: 25px;
+	}	
+</style>
+</head>
+<body>
+
+	<!-- Banner -->
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1>Sea Dogs</h1>      
+			<p>We sell food</p>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li><a href="#"><span class="glyphicon glyphicon-home"></a></li>
+				<li><a href="#"> Specials </a></li>
+				<li><a href="#"> Single Items </a></li>
+				<li><a href="#"> Delivery Options </a></li>
+				<li><a href="#"> About Us </a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span> Login </a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Register </a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Content -->
+	<div class="container-fluid">    
+		<div class="row">
+			<div class="col-md-4">
+				<!-- Carousel for combos -->
+				<div id="comboCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Picture circles -->
+					<ol class="carousel-indicators">
+						<li data-target="#comboCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#comboCarousel" data-slide-to="1"></li>
+						<li data-target="#comboCarousel" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="combo/01.jpg" alt="Food">
+						</div>
+
+						<div class="item">
+							<img src="combo/02.jpg" alt="Food">
+						</div>
+
+						<div class="item">
+							<img src="combo/03.jpg" alt="Food">
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#comboCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#comboCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<!-- Carousel for single items -->
+				<div id="singleCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Picture circles -->
+					<ol class="carousel-indicators">
+						<li data-target="#singleCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#singleCarousel" data-slide-to="1"></li>
+						<li data-target="#singleCarousel" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="single/01.jpg" alt="Food">
+						</div>
+
+						<div class="item">
+							<img src="single/02.jpeg" alt="Food">
+						</div>
+
+						<div class="item">
+							<img src="single/03.jpg" alt="Food">
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#singleCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#singleCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<!-- Carousel for delivery options -->
+				<div id="deliveryCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Picture circles -->
+					<ol class="carousel-indicators">
+						<li data-target="#deliveryCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#deliveryCarousel" data-slide-to="1"></li>
+						<li data-target="#deliveryCarousel" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="delivery/01.jpg" alt="Food">
+						</div>
+
+						<div class="item">
+							<img src="delivery/02.jpg" alt="Food">
+						</div>
+
+						<div class="item">
+							<img src="delivery/03.jpg" alt="Food">
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#deliveryCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#deliveryCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div><br>
+
+	<!-- Footer -->
+	<footer class="container-fluid text-center">
+		<p>Contact Us</p>
+		<p>Phone: (123) 456 7890 | Mail: 1234 Fake St Phoenix, AZ | Email: user@domain.com</p>
+	</footer>
+
+</body>
+</html>
